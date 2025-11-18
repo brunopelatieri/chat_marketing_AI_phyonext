@@ -21,3 +21,8 @@
     type: TRANSFER
     targets:
     - phyonext
+  - action: Send email
+    type: EMAIL
+    title: "$BUDDY_PIPELINE_NAME execution #$BUDDY_RUN_ID"
+    content: Deploy production chat marketing phyonext
+    recipients: brunopelatieri@gmail.com
