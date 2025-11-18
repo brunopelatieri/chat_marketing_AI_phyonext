@@ -6,3 +6,18 @@
   - type: WEBHOOK
   - type: PUSH
   fail_on_prepare_env_warning: true
+  targets:
+  - target: phyonext
+    type: FTP
+    secure: true
+    name: Phyonext
+    host: 46.202.145.8
+    auth:
+      username: u598903905
+      password: '!encrypted WxC9o49iW3rgolm202J2Kzl5zG1EPt3hAJJ9CG2yVA0=.MSMWN1SaMx6PQ/xpKJE5lg=='
+    path: /domains/phyonext.com/public_html/material/chat
+  actions:
+  - action: Transfer files
+    type: TRANSFER
+    targets:
+    - phyonext
